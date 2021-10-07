@@ -1,7 +1,7 @@
 # Route Finding Visualizer
 
 ### Demo Video
-- TODO
+![](https://github.com/stevenbuttifint/route-finding-visualizer/blob/main/src/res/demoVideo.gif?raw=true)
 
 ---
 
@@ -13,18 +13,21 @@
 ---
 
 ### Description
-- TODO 
+Visually compare different search algorithms in a sandbox grid. Place walls and checkpoints to make the route task unqiue and watch the different algorithms go about finding their solutions. 
 
 ---
 
 ### How To Use
 
-- TODO
-
+- **[Mouse Left-Click]** - Places tile at mouse point on grid
+- **[LEFT]** & **[RIGHT]** - Change beteen different tile types to place.
+- **[UP]** & **[DOWN]** - Change search algorithm used.
+- **[SPACEBAR]** - Run and clear search algorithm.
 ---
 
 ### What I Learned
 
-- TODO
+- How to use Lightweight Java Game Library (LWJGL)
+- How different search algorithms work and compare
 
 [Back To The Top](#route-finding-visualizer)
