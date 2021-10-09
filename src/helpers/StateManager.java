@@ -15,4 +15,23 @@ public class StateManager {
 	public static MainMenu mainMenu;
 	public static Editor editor;
 	
+
+	public static void update() {
+		switch(gameState) {
+		case MAINMENU:
+			if (mainMenu == null)
+				mainMenu = new MainMenu();
+			mainMenu.update();
+			break;
+			
+		case EDITOR:
+			if (editor == null)
+				editor = new Editor(map);
+			
+			mainMenu.sidebarUpdate(editor.getTileTypeSelection());
+			editor.update();
+			break;
+		}
+	}
+	
 }
