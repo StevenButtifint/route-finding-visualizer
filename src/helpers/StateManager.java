@@ -34,4 +34,7 @@ public class StateManager {
 		}
 	}
 	
+	public static void setState(GameState newState) {
+		gameState = newState;
+	}
 }
