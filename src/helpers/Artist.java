@@ -50,4 +50,24 @@ public class Artist {
 		glEnd();
 	}
 	
+	public static void DrawQuadTexture(Texture texture, float x, float y, float width, float height) {
+		texture.bind();
+		glTranslatef(x, y, 0);
+		glBegin(GL_QUADS);
+		//top left
+		glTexCoord2f(0, 0);
+		glVertex2f(0, 0);
+		//top right
+		glTexCoord2f(1, 0);
+		glVertex2f(width, 0);
+		//bottom right
+		glTexCoord2f(1, 1);
+		glVertex2f(width, height);
+		//bottom left
+		glTexCoord2f(0, 1);
+		glVertex2f(0, height);
+		glEnd();
+		glLoadIdentity();
+	}
+	
 }
