@@ -41,4 +41,13 @@ public class Artist {
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	}
 	
+	public static void DrawQuad(float x, float y, float width, float height) {
+		glBegin(GL_QUADS);
+		glVertex2f(x, y); //top left corner
+		glVertex2f(x + width, y); //top right corner
+		glVertex2f(x + width, y + height); //bottom right corner
+		glVertex2f(x, y + height); //bottom left corner
+		glEnd();
+	}
+	
 }
