@@ -15,5 +15,27 @@ public class UserInterface {
 		buttonList = new ArrayList<Button>();
 	}
 	
+	public void addButton(String name, String textureName, int x, int y) {
+		buttonList.add(new Button(name, QuickLoad(textureName), x, y));
+	}
+	
+	public void editButtonTexture(String textureName, int index) {
+		buttonList.get(index).setTexture(QuickLoad(textureName));
+	}
+	
+	public void removeButton(int index) {
+		buttonList.remove(index);
+	}
+	
+	
+	private Button getButton(String buttonName) {
+		for (Button b: buttonList) {
+			if (b.getName().equals(buttonName)) {
+				return b;
+			}
+		}
+		return null;
+	}
+	
 
 }
