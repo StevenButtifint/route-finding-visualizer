@@ -37,5 +37,10 @@ public class UserInterface {
 		return null;
 	}
 	
+	public void draw() {
+		for (Button b: buttonList) {
+			DrawQuadTexture(b.getTexture(), b.getX(), b.getY(), b.getWidth(), b.getHeight());
+		}
+	}
 
 }
