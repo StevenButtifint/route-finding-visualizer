@@ -6,4 +6,10 @@ public class Editor {
 	private Sandbox sandbox;
 	
 	
+	public Editor(int[][] map) {
+		grid = new TileGrid(map);
+		sandbox = new Sandbox(grid);
+	}
+	
+	
 }
