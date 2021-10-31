@@ -14,7 +14,11 @@ public class Editor {
 	
 	public void update() {
 		grid.Draw();
+		sandbox.Update();
 	}
 	
 	
+	public String getTileTypeSelection() {
+		return sandbox.getSelectedType();
+	}
 }
