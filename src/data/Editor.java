@@ -12,4 +12,9 @@ public class Editor {
 	}
 	
 	
+	public void update() {
+		grid.Draw();
+	}
+	
+	
 }
