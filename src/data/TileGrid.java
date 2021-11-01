@@ -117,4 +117,8 @@ public class TileGrid {
 		return map[x][y].getType();
 	}
 	
+	public int getTileSize() {
+		return this.tileSize;
+	}
+	
 }
