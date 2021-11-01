@@ -113,4 +113,8 @@ public class TileGrid {
 		return searchType;
 	}
 	
+	public TileType getTileType(int x, int y) {
+		return map[x][y].getType();
+	}
+	
 }
