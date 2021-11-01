@@ -91,4 +91,26 @@ public class TileGrid {
 		return searchType;
 	}
 	
+	public TileType getCompleteType(int x,int y) {
+		TileType type = map[x][y].getType();
+		TileType searchType = TileType.START_TILE;//invalid response
+		switch(type) {
+		case BLANK_TILE_SEARCHED:
+			searchType = TileType.PATH_TILE;
+			break;
+		case CHECKPOINT_TILE_SEARCHED:
+			searchType = TileType.CHECKPOINT_TILE_COMPLETE;
+			break;
+		case END_TILE_SEARCHED:
+			searchType = TileType.END_TILE_COMPLETE;
+			break;
+		case START_TILE_SEARCHED:
+			searchType = TileType.START_TILE_COMPLETE;
+			break;
+		default:
+			break;
+		}
+		return searchType;
+	}
+	
 }
