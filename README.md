@@ -29,6 +29,6 @@ Visually compare different search algorithms in a sandbox grid. Place walls and 
 
 - How to use Lightweight Java Game Library (LWJGL)
 - How different search algorithms work and compare
-- Refined my Java skills particularly the utilisation of classes and switch expressions
+- Refined my Java skills particularly the utilisation of enum classes and switch expressions
 
 [Back To The Top](#route-finding-visualizer)
