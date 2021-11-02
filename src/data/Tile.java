@@ -4,6 +4,7 @@ import org.newdawn.slick.opengl.Texture;
 
 import static helpers.Artist.*;
 
+
 public class Tile {
 	
 	private float x, y, width, height;
@@ -27,6 +28,10 @@ public class Tile {
 		return x;
 	}
 	
+	public float getY() {
+		return y;
+	}
+	
 	public int getXPlace() {
 		return (int) x / 64;
 	}
@@ -37,10 +42,6 @@ public class Tile {
 
 	public void setX(float x) {
 		this.x = x;
-	}
-
-	public float getY() {
-		return y;
 	}
 
 	public void setY(float y) {
