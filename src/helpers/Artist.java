@@ -70,4 +70,16 @@ public class Artist {
 		glLoadIdentity();
 	}
 	
+	public static Texture LoadTexture(String path, String fileType) {
+		Texture texture = null;
+		InputStream in = ResourceLoader.getResourceAsStream(path);
+		try {
+			texture = TextureLoader.getTexture(fileType, in);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return texture;
+		
+	}
+	
 }
