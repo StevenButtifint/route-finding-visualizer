@@ -121,4 +121,27 @@ public class TileGrid {
 		return this.tileSize;
 	}
 	
+	public void editTile(int x, int y, TileType newType) {
+		
+		if (newType == TileType.START_TILE) {
+			if (map[x][y].getType() != TileType.END_TILE) {
+				clearTileType(TileType.START_TILE);
+				//setTile(x, y, TileType.START_TILE);
+				startX = x;
+				startY = y;
+				map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, TileType.START_TILE);
+			}
+		}
+		else if (newType == TileType.END_TILE) {
+			if (map[x][y].getType() != TileType.START_TILE) {
+				clearTileType(TileType.END_TILE);
+				//setTile(x, y, TileType.END_TILE);
+				map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, TileType.END_TILE);
+			}
+		} else {
+			//setTile(map, x, y, newType);
+			map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, newType);
+		}
+	}
+	
 }
