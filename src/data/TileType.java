@@ -16,5 +16,16 @@ public enum TileType {
 		this.textureName = textureName;
 		this.pathable = pathable;
 	}
+	
+	public static TileType[] getTileTypes() {
+		TileType[] tileTypes = new TileType[] {
+				TileType.START_TILE,
+				TileType.CHECKPOINT_TILE,
+				TileType.END_TILE,
+				TileType.WALL_TILE,
+				TileType.BLANK_TILE
+		};
+		return tileTypes;
+	}
 
 }
