@@ -144,4 +144,15 @@ public class TileGrid {
 		}
 	}
 	
+	
+	private void clearTileType(TileType type) {
+		for (int i=0; i<map.length; i++) {
+			for (int j=0; j<map[i].length; j++) {
+				if (map[i][j].getType() == type) {
+					map[i][j] = new Tile(i*tileSize, j*tileSize, tileSize, tileSize, TileType.BLANK_TILE);
+				}
+			}
+		}
+	}
+	
 }
