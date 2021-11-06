@@ -144,6 +144,10 @@ public class TileGrid {
 		}
 	}
 	
+	public void setTile(int x, int y, TileType newType) {
+		map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, newType);
+	}
+	
 	
 	private void clearTileType(TileType type) {
 		for (int i=0; i<map.length; i++) {
