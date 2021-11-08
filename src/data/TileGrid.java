@@ -166,4 +166,12 @@ public class TileGrid {
 		}
 	}
 	
+	public int getTilesX() {
+		return xTiles;
+	}
+	
+	public int getTilesY() {
+		return yTiles;
+	}
+
 }
