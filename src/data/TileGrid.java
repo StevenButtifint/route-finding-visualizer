@@ -148,6 +148,13 @@ public class TileGrid {
 		map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, newType);
 	}
 	
+	public void Draw() {
+		for (int i=0; i<map.length; i++) {
+			for (int j=0; j<map[i].length; j++) {
+				map[i][j].Draw();
+			}
+		}
+	}
 	
 	private void clearTileType(TileType type) {
 		for (int i=0; i<map.length; i++) {
