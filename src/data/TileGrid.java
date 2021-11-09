@@ -152,6 +152,10 @@ public class TileGrid {
 		return map[x][y];
 	}
 	
+	public Tile[][] getGrid() {
+		return map;
+	}
+	
 	public void Draw() {
 		for (int i=0; i<map.length; i++) {
 			for (int j=0; j<map[i].length; j++) {
