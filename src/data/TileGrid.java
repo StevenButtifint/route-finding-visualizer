@@ -148,6 +148,10 @@ public class TileGrid {
 		map[x][y] = new Tile(x*tileSize, y*tileSize, tileSize, tileSize, newType);
 	}
 	
+	public Tile GetTile(int x, int y) {
+		return map[x][y];
+	}
+	
 	public void Draw() {
 		for (int i=0; i<map.length; i++) {
 			for (int j=0; j<map[i].length; j++) {
