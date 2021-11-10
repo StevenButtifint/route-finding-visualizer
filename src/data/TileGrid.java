@@ -156,6 +156,14 @@ public class TileGrid {
 		return map;
 	}
 	
+	public int getStartX() {
+		return startX;
+	}
+	
+	public int getStartY() {
+		return startY;
+	}
+	
 	public void Draw() {
 		for (int i=0; i<map.length; i++) {
 			for (int j=0; j<map[i].length; j++) {
