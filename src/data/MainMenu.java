@@ -25,6 +25,19 @@ public class MainMenu {
 		this.tileTypeSelected = TileType.START_TILE.toString();
 
 		this.menuUserInterface.addButton("tileTypeSelection", "tileTextures/" + this.tileTypeSelected, WIDTH -99, (int) (HEIGHT * 0.23f));
+		
+		
+		
+	}
+	
+	private void updateButtons() {
+		if (Mouse.isButtonDown(0)) {
+			if (menuUserInterface.isButtonClicked("Create"))
+				System.out.println("Play button clicked");
+				StateManager.setState(GameState.EDITOR);
+		}
+	}
+
 	}
 	
 }
