@@ -38,6 +38,10 @@ public class MainMenu {
 		}
 	}
 
+	public void update() {
+		DrawQuadTexture(background, 0, 0, 2048, 1024);
+		this.menuUserInterface.draw();
+		updateButtons();
 	}
 	
 }
