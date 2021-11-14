@@ -44,4 +44,11 @@ public class MainMenu {
 		updateButtons();
 	}
 	
+	public void sidebarUpdate(String currentTileType) {
+		if (tileTypeSelected != currentTileType) {
+			tileTypeSelected = currentTileType;
+			menuUserInterface.editButtonTexture("tileTextures/" + currentTileType, 2);				
+		}
+		update();
+	}
 }
